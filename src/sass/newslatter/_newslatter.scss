@@ -1,0 +1,59 @@
+.newslatter {
+    background: $color-primary;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+     .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .singup {
+            display: flex;
+            align-items: center;
+            .text {
+                margin-left: 20px;
+                p {
+                    font: $regular 20px/1 $font-1;
+                    color: $color-secondary;
+                }
+            }
+        }
+        .textnewsletter {
+            p {
+                font: $regular 15px/1 $font-1;
+                color: $color-secondary;
+            }
+        }
+        .formsingup {
+            .form {
+                input[type="email"] {
+                    width: 310px;
+                    height: 40px;
+                    border-bottom-left-radius: 25px;
+                    border-top-left-radius: 25px;
+                    border: 0;
+                    padding: 0 20px;
+                    &::placeholder {
+                        padding-left: 20px;
+                        color: #a0a0a0;
+                    }
+                }
+                button.btn-default.btn-large {
+                    background: $color-secondary;
+                    color: $thrid-color;
+                    height: 40px;
+                    border: 0;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    width: 100px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #a0a0a0;
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}

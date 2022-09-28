@@ -1,0 +1,94 @@
+.header {
+    border-bottom: 1px solid #e7e7e7;
+    .headerTopbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 112px;
+        flex-wrap: wrap;
+        .itemTop {
+            display: flex;
+            align-items: center;
+            .item {
+                a {
+                    font: $regular 14px/1 $font-1;
+                    color: $color-secondary;
+                    text-decoration: none;
+                    margin-right: 30px;
+                }
+            }
+        }
+        .shopTop {
+            display: flex;
+            align-items: center;
+            .selection {
+                margin: 0 30px;
+            }
+            .panier {
+                .contentpanier {
+                    display: flex;
+                    align-items: center;
+                    .count {
+                        width: 20px;
+                        height: 20px;
+                        background: $color-primary;
+                        text-align: center;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;                    
+                    }
+                }
+            }
+        }
+        .search {
+            form {
+                display: flex;
+                align-items: center;
+                .contentForm {
+                    display: flex;
+                    @media (min-width: 1200px) {
+                        width: 500px;
+                    }
+                    input {
+                        height: 32px;
+                        border-right: 0 !important;
+                        padding: 0;
+                        border: 2px solid $color-primary;
+                        width: 50%;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        font: $regular 15px/1 $font-1;
+                        padding: 0 15px;
+                        &::placeholder {
+                            color: #a0a0a0;
+                        }
+                        &:focus, &:focus-visible {
+                            border-color: $color-primary;
+                        }
+                    }
+                    select {
+                        font: $regular 15px/1 $font-1;
+                        height: 36px;
+                        border-left: 0 !important;
+                        border: 2px solid $color-primary;
+                        width: 50%;
+                        text-align: center;
+                        color: #6b6b6b;
+                        &:focus, &:focus-visible {
+                            border-color: $color-primary;
+                        }
+                    }
+                }
+                button.serchBtn {
+                    width: 62px;
+                    height: 36px;
+                    border: 2px solid $color-primary;
+                    background: $color-primary;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+        }
+    }
+}

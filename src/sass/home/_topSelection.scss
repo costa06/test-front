@@ -1,0 +1,6 @@
+.myselection {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}

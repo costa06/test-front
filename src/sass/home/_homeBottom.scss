@@ -1,0 +1,24 @@
+.homeBottom {
+    display: flex;
+    align-items: center;
+    .itemBottom {
+        width: 150px;
+        justify-content: center;
+        height: 170px;
+        align-items: center;
+        display: flex;
+        background: #fff;
+        border-left: 1px solid #e7e7e7;
+        &:last-child {
+            border-right: 1px solid #e7e7e7;
+        }
+        .linkBottom {
+            padding-bottom: 20px;
+            a {
+                font: $regular 14px/1 $font-1;
+                color: $color-secondary;
+                text-decoration: none;
+            }
+        }
+    }
+}

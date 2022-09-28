@@ -1,0 +1,9 @@
+.home {
+    background: #f5f8f8;
+    border-bottom: 1px solid #f5f8f8;
+    .home__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

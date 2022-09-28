@@ -1,0 +1,83 @@
+.footertop {
+    background: #f8f8f8;
+    padding: 50px 0 60px 0;
+    .contentFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        flex-wrap: wrap;
+        .coordonnee {
+            display: flex;
+            flex-direction: column;
+            .telephone {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .coordTel {
+                    display: flex;
+                    flex-direction: column;
+                    .label {
+                        font: $regular 13px/1 $font-1;
+                        color: $color-secondary;
+                    }
+                    a {
+                        font: $regular 20px/1 $font-1;
+                        color: $color-secondary;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .adresse {
+                margin-top: 30px;
+                .adressTitle {
+                    p {
+                        font: $bold 14px/1 $font-1;
+                        color: $color-secondary;
+                    }
+                }
+                .adresseElement {
+                    p {
+                        font: $regular 14px/1 $font-1;
+                        color: $color-secondary;
+                    }
+                }
+            }
+            .reseauxSociaux {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                margin-top: 30px;
+                 a {
+                    margin-right: 23px;
+                 }
+            }
+        }
+        .titleLink {
+            font: $bold 14px/1 $font-1;
+            color: $color-secondary;
+            margin-bottom: 23px;
+        }
+        .contentLink {
+            display: flex;
+            flex-direction: column;
+            min-height: 232px;
+            ul {
+                padding: 0;
+                margin-bottom: 0;
+                li {
+                    display: block;
+                    margin-bottom: 20px;
+                    a {
+                        font: $regular 14px/1 $font-1;
+                        color: $color-secondary;
+                        text-decoration: none;
+                       
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

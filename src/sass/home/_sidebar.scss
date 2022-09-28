@@ -1,0 +1,33 @@
+.sidebarRight {
+    .itemRight {
+        min-height: 170px;
+        max-width: 240px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: #fff;
+        border-bottom: 1px solid #e7e7e7;
+        &:last-child {
+            border: 0;
+        }
+        .title {
+            padding: 0 30px;
+            h1 {
+                font: $regular 17px/1 $font-1;
+                color: $color-secondary;
+            }
+        }
+        .btnBottom {
+            padding: 0 30px;
+            a {
+                font: $bold 14px/1 $font-1;
+                color: $color-secondary;
+                text-decoration: none;
+                img {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
